@@ -7,10 +7,12 @@ import { GithubIcon } from './SocialIcons';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const base = import.meta.env.BASE_URL;
+
 const PROJECT_IMAGES = [
-  '/images/corewars.png',
-  '/images/preptitan.png',
-  '/images/quicko.png',
+  `${base}images/corewars.png`,
+  `${base}images/preptitan.png`,
+  `${base}images/quicko.png`,
 ];
 
 export default function Projects() {
